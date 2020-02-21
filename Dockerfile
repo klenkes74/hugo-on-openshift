@@ -1,6 +1,7 @@
 FROM devtools/go-toolset-rhel7
 
 ENV GOPATH "/opt/go"
+ENV PATH "/opt/go/bin:$PATH"
 
 USER root
 
