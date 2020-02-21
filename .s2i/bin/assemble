@@ -12,3 +12,7 @@ echo "done"
 echo -n "Copying content ${SOURCE} --> ${TARGET} ... "
 cp -a ${SOURCE}* ${TARGET}
 echo "done"
+
+echo -n "Cleaning ${SOURCE} ... "
+rm -rf ${SOURCE}
+echo "done"
