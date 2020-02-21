@@ -1,2 +1,5 @@
 #!/bin/sh
-hugo server --config /opt/app-root/src/config/config.toml --bind "0.0.0.0" -s /opt/app-root/src/ --appendPort=false -p 8080
+
+WORKDIR=/opt/app-root/src/
+
+exec hugo server --config ${WORKDIR}config/config.toml --bind "0.0.0.0" -s ${WORKDIR} --appendPort=false -p 8080
