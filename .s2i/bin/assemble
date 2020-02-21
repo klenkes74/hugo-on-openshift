@@ -2,4 +2,4 @@ mkdir /tmp/config
 
 mkdir -p /opt/app-root/src/config
 cp /tmp/src/config.toml /opt/app-root/src/config/config.toml
-cp /tmp/src/* /opt/app-root/src
+cp -a /tmp/src/* /opt/app-root/src
