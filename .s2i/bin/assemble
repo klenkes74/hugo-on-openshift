@@ -1,5 +1,14 @@
-mkdir /tmp/config
+SOURCE=/tmp/src/
+TARGET=/opt/app-root/src/
 
-mkdir -p /opt/app-root/src/config
-cp /tmp/src/config.toml /opt/app-root/src/config/config.toml
-cp -a /tmp/src/* /opt/app-root/src
+echo -n "Creating directory: ${TARGET}config ... "
+mkdir -p ${TARGET}config
+echo "done"
+
+echo -n "Copying configuration ${SOURCE}*.toml to ${TARGET}config/*.toml ... "
+cp ${SOURCE}*.toml ${TARGET}config
+echo "done"
+
+echo -n "Copying content ${SOURCE} --> ${TARGET} ... "
+cp -a ${SOURCE}* ${TARGET}
+echo "done"
