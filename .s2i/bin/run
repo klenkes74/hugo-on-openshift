@@ -1,2 +1,2 @@
 #!/bin/sh
-hugo server --config /tmp/config/config.toml --bind "0.0.0.0" -s /tmp/src/ --appendPort=false -p 8080
+hugo server --config /opt/app-root/src/config/config.toml --bind "0.0.0.0" -s /opt/app-root/src/ --appendPort=false -p 8080
