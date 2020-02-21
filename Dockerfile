@@ -4,6 +4,7 @@ ENV GOPATH "/opt/go"
 
 USER root
 
+RUN yum -y remove kernel-headers
 RUN mkdir -p $GOPATH && scl enable go-toolset-1.12 "go get github.com/gohugoio/hugo"
 
 ADD .s2i/bin /usr/local/s2i
